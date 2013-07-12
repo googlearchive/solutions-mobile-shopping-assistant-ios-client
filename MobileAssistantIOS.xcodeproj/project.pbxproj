@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1F99B917416FA900F18B2A /* OffersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F99B617416FA900F18B2A /* OffersTableViewController.m */; };
+		2F1F99BA17416FA900F18B2A /* ShopsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F99B817416FA900F18B2A /* ShopsTableViewController.m */; };
+		2F1F99BD17416FB700F18B2A /* ViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F99BC17416FB700F18B2A /* ViewHelper.m */; };
+		2F1F99C017416FC000F18B2A /* ExtraPropertyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F99BF17416FC000F18B2A /* ExtraPropertyUITableViewCell.m */; };
+		2F1F99C417416FD600F18B2A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F99C117416FD600F18B2A /* icon.png */; };
+		2F1F99C517416FD600F18B2A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F99C217416FD600F18B2A /* logo.png */; };
+		2F1F99C617416FD600F18B2A /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F99C317416FD600F18B2A /* White.png */; };
+		2F1F99C917416FE100F18B2A /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F99C717416FE100F18B2A /* iphone.storyboard */; };
+		2F1F99CF17416FFA00F18B2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F99CA17416FFA00F18B2A /* main.m */; };
+		2F1F99D117416FFA00F18B2A /* MobileAssistantIOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F99CE17416FFA00F18B2A /* MobileAssistantIOSAppDelegate.m */; };
+		2F650B6816B84F2A009B6DD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F650B6716B84F2A009B6DD2 /* SystemConfiguration.framework */; };
+		2F72EB4316BB35FF00C29E08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F72EB4216BB35FF00C29E08 /* Security.framework */; };
+		2FB151C51757EFF3008734A1 /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151931757EFF3008734A1 /* GTLBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151C61757EFF3008734A1 /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151951757EFF3008734A1 /* GTLBatchQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151C71757EFF3008734A1 /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151971757EFF3008734A1 /* GTLBatchResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151C81757EFF3008734A1 /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151991757EFF3008734A1 /* GTLDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151C91757EFF3008734A1 /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB1519C1757EFF3008734A1 /* GTLErrorObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151CA1757EFF3008734A1 /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB1519E1757EFF3008734A1 /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151CB1757EFF3008734A1 /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151A01757EFF3008734A1 /* GTLJSONParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151CC1757EFF3008734A1 /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151A21757EFF3008734A1 /* GTLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151CD1757EFF3008734A1 /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151A41757EFF3008734A1 /* GTLQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151CE1757EFF3008734A1 /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151A61757EFF3008734A1 /* GTLRuntimeCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151CF1757EFF3008734A1 /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151A81757EFF3008734A1 /* GTLService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D01757EFF3008734A1 /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151AB1757EFF3008734A1 /* GTLUploadParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D11757EFF3008734A1 /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151AD1757EFF3008734A1 /* GTLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D21757EFF3008734A1 /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151AF1757EFF3008734A1 /* GTMGatherInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D31757EFF3008734A1 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151B11757EFF3008734A1 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D41757EFF3008734A1 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151B31757EFF3008734A1 /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D51757EFF3008734A1 /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151B51757EFF3008734A1 /* GTMHTTPFetcherService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D61757EFF3008734A1 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151B71757EFF3008734A1 /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D71757EFF3008734A1 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151B91757EFF3008734A1 /* GTMHTTPUploadFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D81757EFF3008734A1 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151BB1757EFF3008734A1 /* GTMMIMEDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151D91757EFF3008734A1 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151BD1757EFF3008734A1 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151DA1757EFF3008734A1 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151BF1757EFF3008734A1 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151DB1757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151C11757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151DC1757EFF3008734A1 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB151C21757EFF3008734A1 /* GTMOAuth2ViewTouch.xib */; };
+		2FB151DD1757EFF3008734A1 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151C41757EFF3008734A1 /* GTMReadMonitorInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB151FD1757F000008734A1 /* GTLQueryShoppingassistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151DF1757F000008734A1 /* GTLQueryShoppingassistant.m */; };
+		2FB151FE1757F000008734A1 /* GTLServiceShoppingassistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151E11757F000008734A1 /* GTLServiceShoppingassistant.m */; };
+		2FB151FF1757F000008734A1 /* GTLShoppingassistantCheckIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151E41757F000008734A1 /* GTLShoppingassistantCheckIn.m */; };
+		2FB152001757F000008734A1 /* GTLShoppingassistantCheckInCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151E61757F000008734A1 /* GTLShoppingassistantCheckInCollection.m */; };
+		2FB152011757F000008734A1 /* GTLShoppingassistantDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151E81757F000008734A1 /* GTLShoppingassistantDeviceInfo.m */; };
+		2FB152021757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151EA1757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.m */; };
+		2FB152031757F000008734A1 /* GTLShoppingassistantGeoPt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151EC1757F000008734A1 /* GTLShoppingassistantGeoPt.m */; };
+		2FB152041757F000008734A1 /* GTLShoppingassistantKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151EE1757F000008734A1 /* GTLShoppingassistantKey.m */; };
+		2FB152051757F000008734A1 /* GTLShoppingassistantOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151F01757F000008734A1 /* GTLShoppingassistantOffer.m */; };
+		2FB152061757F000008734A1 /* GTLShoppingassistantOfferCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151F21757F000008734A1 /* GTLShoppingassistantOfferCollection.m */; };
+		2FB152071757F000008734A1 /* GTLShoppingassistantPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151F41757F000008734A1 /* GTLShoppingassistantPlace.m */; };
+		2FB152081757F000008734A1 /* GTLShoppingassistantPlaceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151F61757F000008734A1 /* GTLShoppingassistantPlaceInfo.m */; };
+		2FB152091757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151F81757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.m */; };
+		2FB1520A1757F000008734A1 /* GTLShoppingassistantRecommendation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151FA1757F000008734A1 /* GTLShoppingassistantRecommendation.m */; };
+		2FB1520B1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB151FC1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.m */; };
+		2FEF000316B37A0400C44902 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEF000216B37A0400C44902 /* CoreLocation.framework */; };
+		2FF1547016B279C4006CD779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1546F16B279C4006CD779 /* UIKit.framework */; };
+		2FF1547216B279C4006CD779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1547116B279C4006CD779 /* Foundation.framework */; };
+		2FF1547416B279C4006CD779 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF1547316B279C4006CD779 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F1F99B517416FA900F18B2A /* OffersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersTableViewController.h; sourceTree = SOURCE_ROOT; };
+		2F1F99B617416FA900F18B2A /* OffersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OffersTableViewController.m; sourceTree = SOURCE_ROOT; };
+		2F1F99B717416FA900F18B2A /* ShopsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopsTableViewController.h; sourceTree = SOURCE_ROOT; };
+		2F1F99B817416FA900F18B2A /* ShopsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopsTableViewController.m; sourceTree = SOURCE_ROOT; };
+		2F1F99BB17416FB700F18B2A /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = SOURCE_ROOT; };
+		2F1F99BC17416FB700F18B2A /* ViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHelper.m; sourceTree = SOURCE_ROOT; };
+		2F1F99BE17416FC000F18B2A /* ExtraPropertyUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraPropertyUITableViewCell.h; sourceTree = SOURCE_ROOT; };
+		2F1F99BF17416FC000F18B2A /* ExtraPropertyUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraPropertyUITableViewCell.m; sourceTree = SOURCE_ROOT; };
+		2F1F99C117416FD600F18B2A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
+		2F1F99C217416FD600F18B2A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
+		2F1F99C317416FD600F18B2A /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = SOURCE_ROOT; };
+		2F1F99C817416FE100F18B2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iphone.storyboard; sourceTree = SOURCE_ROOT; };
+		2F1F99CA17416FFA00F18B2A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SupportingFiles/main.m; sourceTree = SOURCE_ROOT; };
+		2F1F99CB17416FFA00F18B2A /* MobileAssistantIOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MobileAssistantIOS-Info.plist"; path = "SupportingFiles/MobileAssistantIOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2F1F99CC17416FFA00F18B2A /* MobileAssistantIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MobileAssistantIOS-Prefix.pch"; path = "SupportingFiles/MobileAssistantIOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		2F1F99CE17416FFA00F18B2A /* MobileAssistantIOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MobileAssistantIOSAppDelegate.m; path = SupportingFiles/MobileAssistantIOSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		2F1F9A5517418C9F00F18B2A /* MobileAssistantIOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileAssistantIOSAppDelegate.h; path = SupportingFiles/MobileAssistantIOSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		2F650B6716B84F2A009B6DD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2F72EB4216BB35FF00C29E08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2FB151921757EFF3008734A1 /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBase64.h; path = GTLSource/GTLBase64.h; sourceTree = SOURCE_ROOT; };
+		2FB151931757EFF3008734A1 /* GTLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBase64.m; path = GTLSource/GTLBase64.m; sourceTree = SOURCE_ROOT; };
+		2FB151941757EFF3008734A1 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchQuery.h; path = GTLSource/GTLBatchQuery.h; sourceTree = SOURCE_ROOT; };
+		2FB151951757EFF3008734A1 /* GTLBatchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchQuery.m; path = GTLSource/GTLBatchQuery.m; sourceTree = SOURCE_ROOT; };
+		2FB151961757EFF3008734A1 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLBatchResult.h; path = GTLSource/GTLBatchResult.h; sourceTree = SOURCE_ROOT; };
+		2FB151971757EFF3008734A1 /* GTLBatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLBatchResult.m; path = GTLSource/GTLBatchResult.m; sourceTree = SOURCE_ROOT; };
+		2FB151981757EFF3008734A1 /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDateTime.h; path = GTLSource/GTLDateTime.h; sourceTree = SOURCE_ROOT; };
+		2FB151991757EFF3008734A1 /* GTLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDateTime.m; path = GTLSource/GTLDateTime.m; sourceTree = SOURCE_ROOT; };
+		2FB1519A1757EFF3008734A1 /* GTLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDefines.h; path = GTLSource/GTLDefines.h; sourceTree = SOURCE_ROOT; };
+		2FB1519B1757EFF3008734A1 /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLErrorObject.h; path = GTLSource/GTLErrorObject.h; sourceTree = SOURCE_ROOT; };
+		2FB1519C1757EFF3008734A1 /* GTLErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLErrorObject.m; path = GTLSource/GTLErrorObject.m; sourceTree = SOURCE_ROOT; };
+		2FB1519D1757EFF3008734A1 /* GTLFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLFramework.h; path = GTLSource/GTLFramework.h; sourceTree = SOURCE_ROOT; };
+		2FB1519E1757EFF3008734A1 /* GTLFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLFramework.m; path = GTLSource/GTLFramework.m; sourceTree = SOURCE_ROOT; };
+		2FB1519F1757EFF3008734A1 /* GTLJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLJSONParser.h; path = GTLSource/GTLJSONParser.h; sourceTree = SOURCE_ROOT; };
+		2FB151A01757EFF3008734A1 /* GTLJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLJSONParser.m; path = GTLSource/GTLJSONParser.m; sourceTree = SOURCE_ROOT; };
+		2FB151A11757EFF3008734A1 /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLObject.h; path = GTLSource/GTLObject.h; sourceTree = SOURCE_ROOT; };
+		2FB151A21757EFF3008734A1 /* GTLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLObject.m; path = GTLSource/GTLObject.m; sourceTree = SOURCE_ROOT; };
+		2FB151A31757EFF3008734A1 /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQuery.h; path = GTLSource/GTLQuery.h; sourceTree = SOURCE_ROOT; };
+		2FB151A41757EFF3008734A1 /* GTLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQuery.m; path = GTLSource/GTLQuery.m; sourceTree = SOURCE_ROOT; };
+		2FB151A51757EFF3008734A1 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLRuntimeCommon.h; path = GTLSource/GTLRuntimeCommon.h; sourceTree = SOURCE_ROOT; };
+		2FB151A61757EFF3008734A1 /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLRuntimeCommon.m; path = GTLSource/GTLRuntimeCommon.m; sourceTree = SOURCE_ROOT; };
+		2FB151A71757EFF3008734A1 /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLService.h; path = GTLSource/GTLService.h; sourceTree = SOURCE_ROOT; };
+		2FB151A81757EFF3008734A1 /* GTLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLService.m; path = GTLSource/GTLService.m; sourceTree = SOURCE_ROOT; };
+		2FB151A91757EFF3008734A1 /* GTLTargetNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTargetNamespace.h; path = GTLSource/GTLTargetNamespace.h; sourceTree = SOURCE_ROOT; };
+		2FB151AA1757EFF3008734A1 /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUploadParameters.h; path = GTLSource/GTLUploadParameters.h; sourceTree = SOURCE_ROOT; };
+		2FB151AB1757EFF3008734A1 /* GTLUploadParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUploadParameters.m; path = GTLSource/GTLUploadParameters.m; sourceTree = SOURCE_ROOT; };
+		2FB151AC1757EFF3008734A1 /* GTLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLUtilities.h; path = GTLSource/GTLUtilities.h; sourceTree = SOURCE_ROOT; };
+		2FB151AD1757EFF3008734A1 /* GTLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLUtilities.m; path = GTLSource/GTLUtilities.m; sourceTree = SOURCE_ROOT; };
+		2FB151AE1757EFF3008734A1 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = GTLSource/GTMGatherInputStream.h; sourceTree = SOURCE_ROOT; };
+		2FB151AF1757EFF3008734A1 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = GTLSource/GTMGatherInputStream.m; sourceTree = SOURCE_ROOT; };
+		2FB151B01757EFF3008734A1 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = GTLSource/GTMHTTPFetcher.h; sourceTree = SOURCE_ROOT; };
+		2FB151B11757EFF3008734A1 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = GTLSource/GTMHTTPFetcher.m; sourceTree = SOURCE_ROOT; };
+		2FB151B21757EFF3008734A1 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherLogging.h; path = GTLSource/GTMHTTPFetcherLogging.h; sourceTree = SOURCE_ROOT; };
+		2FB151B31757EFF3008734A1 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherLogging.m; path = GTLSource/GTMHTTPFetcherLogging.m; sourceTree = SOURCE_ROOT; };
+		2FB151B41757EFF3008734A1 /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcherService.h; path = GTLSource/GTMHTTPFetcherService.h; sourceTree = SOURCE_ROOT; };
+		2FB151B51757EFF3008734A1 /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcherService.m; path = GTLSource/GTMHTTPFetcherService.m; sourceTree = SOURCE_ROOT; };
+		2FB151B61757EFF3008734A1 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetchHistory.h; path = GTLSource/GTMHTTPFetchHistory.h; sourceTree = SOURCE_ROOT; };
+		2FB151B71757EFF3008734A1 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetchHistory.m; path = GTLSource/GTMHTTPFetchHistory.m; sourceTree = SOURCE_ROOT; };
+		2FB151B81757EFF3008734A1 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPUploadFetcher.h; path = GTLSource/GTMHTTPUploadFetcher.h; sourceTree = SOURCE_ROOT; };
+		2FB151B91757EFF3008734A1 /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPUploadFetcher.m; path = GTLSource/GTMHTTPUploadFetcher.m; sourceTree = SOURCE_ROOT; };
+		2FB151BA1757EFF3008734A1 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = GTLSource/GTMMIMEDocument.h; sourceTree = SOURCE_ROOT; };
+		2FB151BB1757EFF3008734A1 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = GTLSource/GTMMIMEDocument.m; sourceTree = SOURCE_ROOT; };
+		2FB151BC1757EFF3008734A1 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2Authentication.h; path = GTLSource/GTMOAuth2Authentication.h; sourceTree = SOURCE_ROOT; };
+		2FB151BD1757EFF3008734A1 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2Authentication.m; path = GTLSource/GTMOAuth2Authentication.m; sourceTree = SOURCE_ROOT; };
+		2FB151BE1757EFF3008734A1 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2SignIn.h; path = GTLSource/GTMOAuth2SignIn.h; sourceTree = SOURCE_ROOT; };
+		2FB151BF1757EFF3008734A1 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2SignIn.m; path = GTLSource/GTMOAuth2SignIn.m; sourceTree = SOURCE_ROOT; };
+		2FB151C01757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2ViewControllerTouch.h; path = GTLSource/GTMOAuth2ViewControllerTouch.h; sourceTree = SOURCE_ROOT; };
+		2FB151C11757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2ViewControllerTouch.m; path = GTLSource/GTMOAuth2ViewControllerTouch.m; sourceTree = SOURCE_ROOT; };
+		2FB151C21757EFF3008734A1 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = GTLSource/GTMOAuth2ViewTouch.xib; sourceTree = SOURCE_ROOT; };
+		2FB151C31757EFF3008734A1 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = GTLSource/GTMReadMonitorInputStream.h; sourceTree = SOURCE_ROOT; };
+		2FB151C41757EFF3008734A1 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = GTLSource/GTMReadMonitorInputStream.m; sourceTree = SOURCE_ROOT; };
+		2FB151DE1757F000008734A1 /* GTLQueryShoppingassistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQueryShoppingassistant.h; path = API/GTLQueryShoppingassistant.h; sourceTree = SOURCE_ROOT; };
+		2FB151DF1757F000008734A1 /* GTLQueryShoppingassistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQueryShoppingassistant.m; path = API/GTLQueryShoppingassistant.m; sourceTree = SOURCE_ROOT; };
+		2FB151E01757F000008734A1 /* GTLServiceShoppingassistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLServiceShoppingassistant.h; path = API/GTLServiceShoppingassistant.h; sourceTree = SOURCE_ROOT; };
+		2FB151E11757F000008734A1 /* GTLServiceShoppingassistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLServiceShoppingassistant.m; path = API/GTLServiceShoppingassistant.m; sourceTree = SOURCE_ROOT; };
+		2FB151E21757F000008734A1 /* GTLShoppingassistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistant.h; path = API/GTLShoppingassistant.h; sourceTree = SOURCE_ROOT; };
+		2FB151E31757F000008734A1 /* GTLShoppingassistantCheckIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantCheckIn.h; path = API/GTLShoppingassistantCheckIn.h; sourceTree = SOURCE_ROOT; };
+		2FB151E41757F000008734A1 /* GTLShoppingassistantCheckIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantCheckIn.m; path = API/GTLShoppingassistantCheckIn.m; sourceTree = SOURCE_ROOT; };
+		2FB151E51757F000008734A1 /* GTLShoppingassistantCheckInCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantCheckInCollection.h; path = API/GTLShoppingassistantCheckInCollection.h; sourceTree = SOURCE_ROOT; };
+		2FB151E61757F000008734A1 /* GTLShoppingassistantCheckInCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantCheckInCollection.m; path = API/GTLShoppingassistantCheckInCollection.m; sourceTree = SOURCE_ROOT; };
+		2FB151E71757F000008734A1 /* GTLShoppingassistantDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantDeviceInfo.h; path = API/GTLShoppingassistantDeviceInfo.h; sourceTree = SOURCE_ROOT; };
+		2FB151E81757F000008734A1 /* GTLShoppingassistantDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantDeviceInfo.m; path = API/GTLShoppingassistantDeviceInfo.m; sourceTree = SOURCE_ROOT; };
+		2FB151E91757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantDeviceInfoCollection.h; path = API/GTLShoppingassistantDeviceInfoCollection.h; sourceTree = SOURCE_ROOT; };
+		2FB151EA1757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantDeviceInfoCollection.m; path = API/GTLShoppingassistantDeviceInfoCollection.m; sourceTree = SOURCE_ROOT; };
+		2FB151EB1757F000008734A1 /* GTLShoppingassistantGeoPt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantGeoPt.h; path = API/GTLShoppingassistantGeoPt.h; sourceTree = SOURCE_ROOT; };
+		2FB151EC1757F000008734A1 /* GTLShoppingassistantGeoPt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantGeoPt.m; path = API/GTLShoppingassistantGeoPt.m; sourceTree = SOURCE_ROOT; };
+		2FB151ED1757F000008734A1 /* GTLShoppingassistantKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantKey.h; path = API/GTLShoppingassistantKey.h; sourceTree = SOURCE_ROOT; };
+		2FB151EE1757F000008734A1 /* GTLShoppingassistantKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantKey.m; path = API/GTLShoppingassistantKey.m; sourceTree = SOURCE_ROOT; };
+		2FB151EF1757F000008734A1 /* GTLShoppingassistantOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantOffer.h; path = API/GTLShoppingassistantOffer.h; sourceTree = SOURCE_ROOT; };
+		2FB151F01757F000008734A1 /* GTLShoppingassistantOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantOffer.m; path = API/GTLShoppingassistantOffer.m; sourceTree = SOURCE_ROOT; };
+		2FB151F11757F000008734A1 /* GTLShoppingassistantOfferCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantOfferCollection.h; path = API/GTLShoppingassistantOfferCollection.h; sourceTree = SOURCE_ROOT; };
+		2FB151F21757F000008734A1 /* GTLShoppingassistantOfferCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantOfferCollection.m; path = API/GTLShoppingassistantOfferCollection.m; sourceTree = SOURCE_ROOT; };
+		2FB151F31757F000008734A1 /* GTLShoppingassistantPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantPlace.h; path = API/GTLShoppingassistantPlace.h; sourceTree = SOURCE_ROOT; };
+		2FB151F41757F000008734A1 /* GTLShoppingassistantPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantPlace.m; path = API/GTLShoppingassistantPlace.m; sourceTree = SOURCE_ROOT; };
+		2FB151F51757F000008734A1 /* GTLShoppingassistantPlaceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantPlaceInfo.h; path = API/GTLShoppingassistantPlaceInfo.h; sourceTree = SOURCE_ROOT; };
+		2FB151F61757F000008734A1 /* GTLShoppingassistantPlaceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantPlaceInfo.m; path = API/GTLShoppingassistantPlaceInfo.m; sourceTree = SOURCE_ROOT; };
+		2FB151F71757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantPlaceInfoCollection.h; path = API/GTLShoppingassistantPlaceInfoCollection.h; sourceTree = SOURCE_ROOT; };
+		2FB151F81757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantPlaceInfoCollection.m; path = API/GTLShoppingassistantPlaceInfoCollection.m; sourceTree = SOURCE_ROOT; };
+		2FB151F91757F000008734A1 /* GTLShoppingassistantRecommendation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantRecommendation.h; path = API/GTLShoppingassistantRecommendation.h; sourceTree = SOURCE_ROOT; };
+		2FB151FA1757F000008734A1 /* GTLShoppingassistantRecommendation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantRecommendation.m; path = API/GTLShoppingassistantRecommendation.m; sourceTree = SOURCE_ROOT; };
+		2FB151FB1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLShoppingassistantRecommendationCollection.h; path = API/GTLShoppingassistantRecommendationCollection.h; sourceTree = SOURCE_ROOT; };
+		2FB151FC1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLShoppingassistantRecommendationCollection.m; path = API/GTLShoppingassistantRecommendationCollection.m; sourceTree = SOURCE_ROOT; };
+		2FEF000216B37A0400C44902 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2FF1546B16B279C4006CD779 /* MobileAssistantIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAssistantIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF1546F16B279C4006CD779 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2FF1547116B279C4006CD779 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2FF1547316B279C4006CD779 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FF1546816B279C4006CD779 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F72EB4316BB35FF00C29E08 /* Security.framework in Frameworks */,
+				2F650B6816B84F2A009B6DD2 /* SystemConfiguration.framework in Frameworks */,
+				2FEF000316B37A0400C44902 /* CoreLocation.framework in Frameworks */,
+				2FF1547016B279C4006CD779 /* UIKit.framework in Frameworks */,
+				2FF1547216B279C4006CD779 /* Foundation.framework in Frameworks */,
+				2FF1547416B279C4006CD779 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F650A6B16B76CF3009B6DD2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2FB151DE1757F000008734A1 /* GTLQueryShoppingassistant.h */,
+				2FB151DF1757F000008734A1 /* GTLQueryShoppingassistant.m */,
+				2FB151E01757F000008734A1 /* GTLServiceShoppingassistant.h */,
+				2FB151E11757F000008734A1 /* GTLServiceShoppingassistant.m */,
+				2FB151E21757F000008734A1 /* GTLShoppingassistant.h */,
+				2FB151E31757F000008734A1 /* GTLShoppingassistantCheckIn.h */,
+				2FB151E41757F000008734A1 /* GTLShoppingassistantCheckIn.m */,
+				2FB151E51757F000008734A1 /* GTLShoppingassistantCheckInCollection.h */,
+				2FB151E61757F000008734A1 /* GTLShoppingassistantCheckInCollection.m */,
+				2FB151E71757F000008734A1 /* GTLShoppingassistantDeviceInfo.h */,
+				2FB151E81757F000008734A1 /* GTLShoppingassistantDeviceInfo.m */,
+				2FB151E91757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.h */,
+				2FB151EA1757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.m */,
+				2FB151EB1757F000008734A1 /* GTLShoppingassistantGeoPt.h */,
+				2FB151EC1757F000008734A1 /* GTLShoppingassistantGeoPt.m */,
+				2FB151ED1757F000008734A1 /* GTLShoppingassistantKey.h */,
+				2FB151EE1757F000008734A1 /* GTLShoppingassistantKey.m */,
+				2FB151EF1757F000008734A1 /* GTLShoppingassistantOffer.h */,
+				2FB151F01757F000008734A1 /* GTLShoppingassistantOffer.m */,
+				2FB151F11757F000008734A1 /* GTLShoppingassistantOfferCollection.h */,
+				2FB151F21757F000008734A1 /* GTLShoppingassistantOfferCollection.m */,
+				2FB151F31757F000008734A1 /* GTLShoppingassistantPlace.h */,
+				2FB151F41757F000008734A1 /* GTLShoppingassistantPlace.m */,
+				2FB151F51757F000008734A1 /* GTLShoppingassistantPlaceInfo.h */,
+				2FB151F61757F000008734A1 /* GTLShoppingassistantPlaceInfo.m */,
+				2FB151F71757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.h */,
+				2FB151F81757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.m */,
+				2FB151F91757F000008734A1 /* GTLShoppingassistantRecommendation.h */,
+				2FB151FA1757F000008734A1 /* GTLShoppingassistantRecommendation.m */,
+				2FB151FB1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.h */,
+				2FB151FC1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		2F650A8816B76F1B009B6DD2 /* GTLSource */ = {
+			isa = PBXGroup;
+			children = (
+				2FB151921757EFF3008734A1 /* GTLBase64.h */,
+				2FB151931757EFF3008734A1 /* GTLBase64.m */,
+				2FB151941757EFF3008734A1 /* GTLBatchQuery.h */,
+				2FB151951757EFF3008734A1 /* GTLBatchQuery.m */,
+				2FB151961757EFF3008734A1 /* GTLBatchResult.h */,
+				2FB151971757EFF3008734A1 /* GTLBatchResult.m */,
+				2FB151981757EFF3008734A1 /* GTLDateTime.h */,
+				2FB151991757EFF3008734A1 /* GTLDateTime.m */,
+				2FB1519A1757EFF3008734A1 /* GTLDefines.h */,
+				2FB1519B1757EFF3008734A1 /* GTLErrorObject.h */,
+				2FB1519C1757EFF3008734A1 /* GTLErrorObject.m */,
+				2FB1519D1757EFF3008734A1 /* GTLFramework.h */,
+				2FB1519E1757EFF3008734A1 /* GTLFramework.m */,
+				2FB1519F1757EFF3008734A1 /* GTLJSONParser.h */,
+				2FB151A01757EFF3008734A1 /* GTLJSONParser.m */,
+				2FB151A11757EFF3008734A1 /* GTLObject.h */,
+				2FB151A21757EFF3008734A1 /* GTLObject.m */,
+				2FB151A31757EFF3008734A1 /* GTLQuery.h */,
+				2FB151A41757EFF3008734A1 /* GTLQuery.m */,
+				2FB151A51757EFF3008734A1 /* GTLRuntimeCommon.h */,
+				2FB151A61757EFF3008734A1 /* GTLRuntimeCommon.m */,
+				2FB151A71757EFF3008734A1 /* GTLService.h */,
+				2FB151A81757EFF3008734A1 /* GTLService.m */,
+				2FB151A91757EFF3008734A1 /* GTLTargetNamespace.h */,
+				2FB151AA1757EFF3008734A1 /* GTLUploadParameters.h */,
+				2FB151AB1757EFF3008734A1 /* GTLUploadParameters.m */,
+				2FB151AC1757EFF3008734A1 /* GTLUtilities.h */,
+				2FB151AD1757EFF3008734A1 /* GTLUtilities.m */,
+				2FB151AE1757EFF3008734A1 /* GTMGatherInputStream.h */,
+				2FB151AF1757EFF3008734A1 /* GTMGatherInputStream.m */,
+				2FB151B01757EFF3008734A1 /* GTMHTTPFetcher.h */,
+				2FB151B11757EFF3008734A1 /* GTMHTTPFetcher.m */,
+				2FB151B21757EFF3008734A1 /* GTMHTTPFetcherLogging.h */,
+				2FB151B31757EFF3008734A1 /* GTMHTTPFetcherLogging.m */,
+				2FB151B41757EFF3008734A1 /* GTMHTTPFetcherService.h */,
+				2FB151B51757EFF3008734A1 /* GTMHTTPFetcherService.m */,
+				2FB151B61757EFF3008734A1 /* GTMHTTPFetchHistory.h */,
+				2FB151B71757EFF3008734A1 /* GTMHTTPFetchHistory.m */,
+				2FB151B81757EFF3008734A1 /* GTMHTTPUploadFetcher.h */,
+				2FB151B91757EFF3008734A1 /* GTMHTTPUploadFetcher.m */,
+				2FB151BA1757EFF3008734A1 /* GTMMIMEDocument.h */,
+				2FB151BB1757EFF3008734A1 /* GTMMIMEDocument.m */,
+				2FB151BC1757EFF3008734A1 /* GTMOAuth2Authentication.h */,
+				2FB151BD1757EFF3008734A1 /* GTMOAuth2Authentication.m */,
+				2FB151BE1757EFF3008734A1 /* GTMOAuth2SignIn.h */,
+				2FB151BF1757EFF3008734A1 /* GTMOAuth2SignIn.m */,
+				2FB151C01757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.h */,
+				2FB151C11757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.m */,
+				2FB151C21757EFF3008734A1 /* GTMOAuth2ViewTouch.xib */,
+				2FB151C31757EFF3008734A1 /* GTMReadMonitorInputStream.h */,
+				2FB151C41757EFF3008734A1 /* GTMReadMonitorInputStream.m */,
+			);
+			name = GTLSource;
+			sourceTree = "<group>";
+		};
+		2FF1546016B279C4006CD779 = {
+			isa = PBXGroup;
+			children = (
+				2FF1547516B279C4006CD779 /* MobileAssistantIos */,
+				2FF1546E16B279C4006CD779 /* Frameworks */,
+				2FF1546C16B279C4006CD779 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FF1546C16B279C4006CD779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1546B16B279C4006CD779 /* MobileAssistantIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FF1546E16B279C4006CD779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF000216B37A0400C44902 /* CoreLocation.framework */,
+				2F650B6716B84F2A009B6DD2 /* SystemConfiguration.framework */,
+				2F72EB4216BB35FF00C29E08 /* Security.framework */,
+				2FF1546F16B279C4006CD779 /* UIKit.framework */,
+				2FF1547116B279C4006CD779 /* Foundation.framework */,
+				2FF1547316B279C4006CD779 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FF1547516B279C4006CD779 /* MobileAssistantIos */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F99C717416FE100F18B2A /* iphone.storyboard */,
+				2F1F99B517416FA900F18B2A /* OffersTableViewController.h */,
+				2F1F99B617416FA900F18B2A /* OffersTableViewController.m */,
+				2F1F99B717416FA900F18B2A /* ShopsTableViewController.h */,
+				2F1F99B817416FA900F18B2A /* ShopsTableViewController.m */,
+				2F1F99BE17416FC000F18B2A /* ExtraPropertyUITableViewCell.h */,
+				2F1F99BF17416FC000F18B2A /* ExtraPropertyUITableViewCell.m */,
+				2F1F99BB17416FB700F18B2A /* ViewHelper.h */,
+				2F1F99BC17416FB700F18B2A /* ViewHelper.m */,
+				2F1F99C117416FD600F18B2A /* icon.png */,
+				2F1F99C217416FD600F18B2A /* logo.png */,
+				2F1F99C317416FD600F18B2A /* White.png */,
+				2F650A8816B76F1B009B6DD2 /* GTLSource */,
+				2F650A6B16B76CF3009B6DD2 /* API */,
+				2FF1547616B279C4006CD779 /* Supporting Files */,
+			);
+			path = MobileAssistantIos;
+			sourceTree = "<group>";
+		};
+		2FF1547616B279C4006CD779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F99CA17416FFA00F18B2A /* main.m */,
+				2F1F99CB17416FFA00F18B2A /* MobileAssistantIOS-Info.plist */,
+				2F1F99CC17416FFA00F18B2A /* MobileAssistantIOS-Prefix.pch */,
+				2F1F9A5517418C9F00F18B2A /* MobileAssistantIOSAppDelegate.h */,
+				2F1F99CE17416FFA00F18B2A /* MobileAssistantIOSAppDelegate.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FF1546A16B279C4006CD779 /* MobileAssistantIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FF1548F16B279C5006CD779 /* Build configuration list for PBXNativeTarget "MobileAssistantIOS" */;
+			buildPhases = (
+				2FF1546716B279C4006CD779 /* Sources */,
+				2FF1546816B279C4006CD779 /* Frameworks */,
+				2FF1546916B279C4006CD779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileAssistantIOS;
+			productName = MobileAssistantIos;
+			productReference = 2FF1546B16B279C4006CD779 /* MobileAssistantIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FF1546216B279C4006CD779 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MobileAssistantIos;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Google;
+			};
+			buildConfigurationList = 2FF1546516B279C4006CD779 /* Build configuration list for PBXProject "MobileAssistantIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2FF1546016B279C4006CD779;
+			productRefGroup = 2FF1546C16B279C4006CD779 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FF1546A16B279C4006CD779 /* MobileAssistantIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FF1546916B279C4006CD779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1F99C417416FD600F18B2A /* icon.png in Resources */,
+				2F1F99C517416FD600F18B2A /* logo.png in Resources */,
+				2F1F99C617416FD600F18B2A /* White.png in Resources */,
+				2F1F99C917416FE100F18B2A /* iphone.storyboard in Resources */,
+				2FB151DC1757EFF3008734A1 /* GTMOAuth2ViewTouch.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FF1546716B279C4006CD779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1F99B917416FA900F18B2A /* OffersTableViewController.m in Sources */,
+				2F1F99BA17416FA900F18B2A /* ShopsTableViewController.m in Sources */,
+				2F1F99BD17416FB700F18B2A /* ViewHelper.m in Sources */,
+				2F1F99C017416FC000F18B2A /* ExtraPropertyUITableViewCell.m in Sources */,
+				2F1F99CF17416FFA00F18B2A /* main.m in Sources */,
+				2F1F99D117416FFA00F18B2A /* MobileAssistantIOSAppDelegate.m in Sources */,
+				2FB151C51757EFF3008734A1 /* GTLBase64.m in Sources */,
+				2FB151C61757EFF3008734A1 /* GTLBatchQuery.m in Sources */,
+				2FB151C71757EFF3008734A1 /* GTLBatchResult.m in Sources */,
+				2FB151C81757EFF3008734A1 /* GTLDateTime.m in Sources */,
+				2FB151C91757EFF3008734A1 /* GTLErrorObject.m in Sources */,
+				2FB151CA1757EFF3008734A1 /* GTLFramework.m in Sources */,
+				2FB151CB1757EFF3008734A1 /* GTLJSONParser.m in Sources */,
+				2FB151CC1757EFF3008734A1 /* GTLObject.m in Sources */,
+				2FB151CD1757EFF3008734A1 /* GTLQuery.m in Sources */,
+				2FB151CE1757EFF3008734A1 /* GTLRuntimeCommon.m in Sources */,
+				2FB151CF1757EFF3008734A1 /* GTLService.m in Sources */,
+				2FB151D01757EFF3008734A1 /* GTLUploadParameters.m in Sources */,
+				2FB151D11757EFF3008734A1 /* GTLUtilities.m in Sources */,
+				2FB151D21757EFF3008734A1 /* GTMGatherInputStream.m in Sources */,
+				2FB151D31757EFF3008734A1 /* GTMHTTPFetcher.m in Sources */,
+				2FB151D41757EFF3008734A1 /* GTMHTTPFetcherLogging.m in Sources */,
+				2FB151D51757EFF3008734A1 /* GTMHTTPFetcherService.m in Sources */,
+				2FB151D61757EFF3008734A1 /* GTMHTTPFetchHistory.m in Sources */,
+				2FB151D71757EFF3008734A1 /* GTMHTTPUploadFetcher.m in Sources */,
+				2FB151D81757EFF3008734A1 /* GTMMIMEDocument.m in Sources */,
+				2FB151D91757EFF3008734A1 /* GTMOAuth2Authentication.m in Sources */,
+				2FB151DA1757EFF3008734A1 /* GTMOAuth2SignIn.m in Sources */,
+				2FB151DB1757EFF3008734A1 /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				2FB151DD1757EFF3008734A1 /* GTMReadMonitorInputStream.m in Sources */,
+				2FB151FD1757F000008734A1 /* GTLQueryShoppingassistant.m in Sources */,
+				2FB151FE1757F000008734A1 /* GTLServiceShoppingassistant.m in Sources */,
+				2FB151FF1757F000008734A1 /* GTLShoppingassistantCheckIn.m in Sources */,
+				2FB152001757F000008734A1 /* GTLShoppingassistantCheckInCollection.m in Sources */,
+				2FB152011757F000008734A1 /* GTLShoppingassistantDeviceInfo.m in Sources */,
+				2FB152021757F000008734A1 /* GTLShoppingassistantDeviceInfoCollection.m in Sources */,
+				2FB152031757F000008734A1 /* GTLShoppingassistantGeoPt.m in Sources */,
+				2FB152041757F000008734A1 /* GTLShoppingassistantKey.m in Sources */,
+				2FB152051757F000008734A1 /* GTLShoppingassistantOffer.m in Sources */,
+				2FB152061757F000008734A1 /* GTLShoppingassistantOfferCollection.m in Sources */,
+				2FB152071757F000008734A1 /* GTLShoppingassistantPlace.m in Sources */,
+				2FB152081757F000008734A1 /* GTLShoppingassistantPlaceInfo.m in Sources */,
+				2FB152091757F000008734A1 /* GTLShoppingassistantPlaceInfoCollection.m in Sources */,
+				2FB1520A1757F000008734A1 /* GTLShoppingassistantRecommendation.m in Sources */,
+				2FB1520B1757F000008734A1 /* GTLShoppingassistantRecommendationCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F1F99C717416FE100F18B2A /* iphone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F1F99C817416FE100F18B2A /* en */,
+			);
+			name = iphone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FF1548D16B279C5006CD779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FF1548E16B279C5006CD779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FF1549016B279C5006CD779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SupportingFiles/MobileAssistantIOS-Prefix.pch";
+				INFOPLIST_FILE = "SupportingFiles/MobileAssistantIOS-Info.plist";
+				PRODUCT_NAME = MobileAssistantIOS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2FF1549116B279C5006CD779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SupportingFiles/MobileAssistantIOS-Prefix.pch";
+				INFOPLIST_FILE = "SupportingFiles/MobileAssistantIOS-Info.plist";
+				PRODUCT_NAME = MobileAssistantIOS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FF1546516B279C4006CD779 /* Build configuration list for PBXProject "MobileAssistantIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF1548D16B279C5006CD779 /* Debug */,
+				2FF1548E16B279C5006CD779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FF1548F16B279C5006CD779 /* Build configuration list for PBXNativeTarget "MobileAssistantIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF1549016B279C5006CD779 /* Debug */,
+				2FF1549116B279C5006CD779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FF1546216B279C4006CD779 /* Project object */;
+}

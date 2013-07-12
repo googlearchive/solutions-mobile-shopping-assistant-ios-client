@@ -1,0 +1,226 @@
+/* Copyright (c) 2013 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#import "ExtraPropertyUITableViewCell.h"
+#import "GTLShoppingassistant.h"
+#import "GTMHTTPFetcher.h"
+#import "OffersTableViewController.h"
+#import "ViewHelper.h"
+
+
+@implementation OffersTableViewController
+@synthesize storeName = _storeName;
+@synthesize offers = _offers;
+@synthesize recommendations = _recommendations;
+@synthesize notifications = _notifications;
+
+enum {
+    kOffers = 0,
+    kRecommendations,
+    kNumberOfSections
+};
+
+- (void)setOffers:(NSArray *)array {
+  if (array != _offers) {
+    _offers = array;
+  
+    if (self.tableView.window) {
+      [self.tableView reloadData];
+      
+      // Remove visual spinner if both recommendation and offers are set
+      UINavigationItem *navigationItem = self.navigationItem;
+      if (self.recommendations && navigationItem.rightBarButtonItem) {
+        navigationItem.rightBarButtonItem = nil;
+      }
+    }
+  }
+}
+
+- (void)setRecommendations:(NSArray *)array {
+  if (array != _recommendations) {
+    _recommendations = array;
+  
+    if (self.tableView.window) {
+      [self.tableView reloadData];
+
+      // Remove visual spinner if both recommendation and offers are set
+      UINavigationItem *navigationItem = self.navigationItem;
+      if (self.offers && navigationItem.rightBarButtonItem) {
+        navigationItem.rightBarButtonItem = nil;
+      }
+    }
+  }
+}
+
+#pragma mark - UITableVew data source for goodies
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  return kNumberOfSections;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+  NSUInteger count = 0;
+  if (section == kOffers) {
+    count = [self.offers count];
+    if (count < NSIntegerMax) {
+      return (NSInteger) count;
+    }
+  } else if (section == kRecommendations) {
+    count = [self.recommendations count];
+    if (count < NSIntegerMax) {
+      return (NSInteger) count;
+    }
+  }
+    
+  return 0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView
+titleForHeaderInSection:(NSInteger)section {
+  if (section == kOffers) {
+    return @"Offers";
+  } else if (section == kRecommendations) {
+    return @"Recommendations";
+  }
+  
+  return nil;
+}
+
+- (void)provideBlankCellImage:(UITableView *)tableView
+                    indexPath:(NSIndexPath *)indexPath
+                    tableCell:(UITableViewCell *)cell {
+  CGSize imageSize = CGSizeMake(kDefaultCellImageWidth,
+                                [self tableView:tableView
+                        heightForRowAtIndexPath:indexPath]);
+  UIImage *cellImage = [UIImage imageNamed:@"White.png"];
+  cell.imageView.image = [ViewHelper resizedImageWithImage:cellImage
+                                                    toSize:imageSize];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  static NSString *const kCellIdentifier = @"Discount with Description";
+  ExtraPropertyUITableViewCell *cell =
+      [tableView dequeueReusableCellWithIdentifier:kCellIdentifier
+                                      forIndexPath:indexPath];
+  if (!cell) {
+    cell = [[ExtraPropertyUITableViewCell alloc]
+                 initWithStyle:UITableViewCellStyleValue2
+               reuseIdentifier:kCellIdentifier];
+  }
+    
+  if (indexPath.section == kOffers) {
+    // Offer section
+    GTLShoppingassistantOffer *offer =
+        [self.offers objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = offer.title;
+    cell.textLabel.textColor =
+        [UIColor colorWithRed:1.0 green:0.51 blue:0 alpha:1.0];
+    cell.detailTextLabel.numberOfLines = 0;
+    cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.detailTextLabel.text = offer.descriptionProperty;
+    
+    [self provideBlankCellImage:tableView indexPath:indexPath tableCell:cell];
+    cell.indexPath = indexPath;    
+    [self configureCellImage:tableView
+                   tableCell:cell
+              imageURLString:offer.imageUrl
+                   indexPath:indexPath];
+  
+  } else if (indexPath.section == kRecommendations) {
+    // Recommendation section
+    GTLShoppingassistantRecommendation *recommendation =
+        [self.recommendations objectAtIndex:indexPath.row];
+        
+    cell.textLabel.text = recommendation.title;
+    cell.textLabel.textColor =
+        [UIColor colorWithRed:0.6 green:0.22 blue:0 alpha:1.0];
+    cell.detailTextLabel.numberOfLines = 0;
+    cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.detailTextLabel.text = recommendation.descriptionProperty;
+    
+    [self provideBlankCellImage:tableView indexPath:indexPath tableCell:cell];
+    cell.indexPath = indexPath;    
+    [self configureCellImage:tableView
+                   tableCell:cell
+              imageURLString:recommendation.imageUrl
+                   indexPath:indexPath];
+  }
+    
+  return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView
+    heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (indexPath.section == kOffers) {
+    // Offer section
+    GTLShoppingassistantOffer *offer =
+        [self.offers objectAtIndex:indexPath.row];
+    return [ViewHelper heightForCellDetailWithLineCount:
+               offer.descriptionProperty.length];
+    
+  } else if (indexPath.section == kRecommendations) {
+    // Recommendation section
+    GTLShoppingassistantRecommendation *recommendation =
+        [self.recommendations objectAtIndex:indexPath.row];
+    NSUInteger length = recommendation.descriptionProperty.length;
+    return [ViewHelper heightForCellDetailWithLineCount:length];
+  }
+    
+  return kDefaultCellHeight;
+}
+
+- (void)configureCellImage:(UITableView *)tableView
+                 tableCell:(ExtraPropertyUITableViewCell *)cell
+            imageURLString:(NSString *)imageURLString
+                 indexPath:(NSIndexPath *)indexPath {
+  GTMHTTPFetcher *fetchImage =
+      [GTMHTTPFetcher fetcherWithURLString:imageURLString];
+  
+  [fetchImage beginFetchWithCompletionHandler:
+      ^(NSData *data, NSError *error) {
+        NSLog(@"Fetch image callback: %@ %@", indexPath, cell);
+        UIImage *fetchedImage = nil;
+    
+        if (error) {
+          // It's not wise to show error message to users for each image
+          // fetching failure, but we should log for debugging.
+          NSLog(@"%@", error);
+        } else {
+          if ([data length] > 0) {
+            fetchedImage = [[UIImage alloc] initWithData:data];
+          }
+        }
+
+        // Attempt to display the image only when the fetched image is valid
+        if (fetchedImage) {
+          // Display the image only when the recyled cell is corresponding to
+          // the matching indexPath
+          if ([indexPath isEqual:cell.indexPath]) {
+            int height = [self tableView:tableView
+                 heightForRowAtIndexPath:indexPath];
+            CGSize imageSize = CGSizeMake(kDefaultCellImageWidth, height);
+            UIImage *image = [ViewHelper resizedImageWithImage:fetchedImage
+                                                        toSize:imageSize];
+            // Set the cell to display the image
+            cell.imageView.image = image;
+          }
+        }
+      }];
+}
+
+@end
